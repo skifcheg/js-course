@@ -1,0 +1,32 @@
+.tooltip {
+    &-helper {
+        color: rgb(34, 72, 196);
+        position: relative;
+        display: block;
+        &:hover {
+            color: rgb(16, 75, 109)
+        }
+    }
+    &-container {
+        display: block;
+        color: white;
+        background: black;
+        border-radius: 5px;
+        padding: 4px 10px;
+        position: absolute;
+        top: calc(100% + 2px);
+        &:after {
+            content: '';
+            display: block;
+            height: 0;
+            width: 0;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            border: 5px solid transparent;
+            border-bottom-color: black;
+            top: -10px;
+        }
+    }
+}

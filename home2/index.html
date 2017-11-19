@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Замовлення:</h1>
+    <p class="tooltip-helper" data-tooltip-text="Загальна кількість квитків: --sum--">
+        7 білетів на автобус, 3 білета на поїзд, 10 білетів на концерт
+    </p>
+    <br>
+    <br>
+    <p class="tooltip-helper" data-tooltip-text="Загальна кількість квитків: --sum--">
+        5 білетів на автобус, 2 білета на поїзд, 1 білетів на концерт
+    </p>
+    <span class="tooltip-helper">400 20 01</span>
+
+    <script src="js/main.js"></script>
+    <script>
+        tooltiper.init();
+    </script>
+</body>
+
+</html>
